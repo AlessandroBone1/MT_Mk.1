@@ -1,14 +1,19 @@
-MT Mk.1 è il nostro progetto e consiste nella realizzazione di una torretta che tramite l'ausilio di un Arduino dotato di sensore per il movimento, va a comunicare col Raspberry pi che permette l'accensione della videocamera.
+MT Mk.1 è il nostro progetto e consiste nella realizzazione di una torretta
+che tramite l'ausilio di un Arduino dotato di sensore per il movimento,va a comunicare col Raspberry pi che permette l'accensione della videocamera.
 Quando questa viene accesa ha il compito di rilevare tutte le facce delle persone che vede e indirizzare la torretta verso il soggetto individuato. 
 Dopo l'individuazione viene sparato da una stampa in 3D di una pistola in plastica un dardo con lo scopo di colpire la persona.
   
-Per la costruzione del progetto abbiamo iniziato procurandoci un Arduino con relativo sensore, un Raspberry pi, una telecamera compatibile, delle piattaforme di appoggio, la stampa in 3d di una pistola e dei pistoni e motori.
-Abbiamo creato 2 software, uno in Arduino con c++ per far funzionare il sensore di movimento e l'altro, per Raspberry pi, in python che serve per captare il segnale inviato dall'Arduino, far partire la videocamera e il riconoscimento facciale (I codici sono all'interno della repository).
-Abbiamo montato la pistola in plastica realizzata con apposita stampante 3D sulla base, collgata ai pistoni e al motore in modo che non avesse problemi nel ruotare in tutte le direzioni e abbiamo collocato Arduino e Raspberry pi al di sotto in maniera tale che non fossero visibili e abbiamo collegato tutti i componenti.
+Per la costruzione del progetto abbiamo iniziato procurandoci un Arduino con relativo sensore, un Raspberry pi, una telecamera compatibile,
+delle piattaforme di appoggio, la stampa in 3d di una pistola e dei pistoni e motori.
+Abbiamo creato 2 software, uno in Arduino con c++ per far funzionare il sensore di movimento e l'altro, per Raspberry pi, in python
+che serve per captare il segnale inviato dall'Arduino, far partire la videocamera e il riconoscimento facciale (I codici sono all'interno della repository).
+Abbiamo montato la pistola in plastica realizzata con apposita stampante 3D sulla base, collgata ai pistoni e al motore
+in modo che non avesse problemi nel ruotare in tutte le direzioni e abbiamo collocato Arduino e Raspberry pi al di sotto in maniera tale che non fossero visibili e abbiamo collegato tutti i componenti.
 In ultima istanza ne abbiamo verificato in funzionamento, con esito positivo.
 
 La realizzazione di questo progetto è stata stimolante, divertente, impegnativa e ci ha costretti a mettere in gioco le nostre conoscenze sia in ambito informatico che elettronico. 
-Ci riteniamo più che soddisfatti del lavoro svolto in quanto rappresenta a pieno la nostra idea di progetto lavorativo, organizzato e svolto in maniera diligente e seria da cui sono scaturite nuove conoscenze ed esperienze.
+Ci riteniamo più che soddisfatti del lavoro svolto in quanto rappresenta a pieno la nostra idea di progetto lavorativo, organizzato e svolto
+in maniera diligente e seria da cui sono scaturite nuove conoscenze ed esperienze.
 Grazie per il tempo dedicatoci.
 
 Bonetti Alessandro - Casali Luca - Perinozzi Mattia.    

@@ -1,0 +1,57 @@
+#include <AccelStepper.h>
+
+const int stepPin = 2;    // Pin del passo del motore
+const int dirPin = 3;     // Pin della direzione del motore
+const int motionSensorPin = 4;  // Pin del sensore di movimento
+const int stepsPerRev = 180;  // Numero di passi per una rotazione completa
+const int stepsFor8Feet = -8;  
+
+AccelStepper stepper(1, stepPin, dirPin); // Inizializza il motore
+
+void setup() {
+  Serial.begin(9600); // Inizializza la comunicazione seriale
+  stepper.setMaxSpeed(1000); // Imposta la velocità massima del motore
+  stepper.setAcceleration(500); // Imposta l'accelerazione del motore
+  pinMode(motionSensorPin, INPUT); // Imposta il pin del sensore di movimento come input
+}
+
+void loop() {
+  int motionDetected = digitalRead(motionSensorPin); // Leggi lo stato del sensore di movimento
+  if (motionDetected == HIGH) {
+    Serial.println("T"); // Invia un messaggio sulla porta seriale
+  }
+
+  if (Serial.available() > 0) {
+    char receivedChar = Serial.read(); // Legge il carattere dalla porta seriale
+    if (receivedChar == '1') {
+      // Muovi il motore in senso antiorario
+      stepper.setSpeed(-500); // Imposta la velocità di rotazione in senso antiorario
+      stepper.move(stepsFor8Feet); // Ruota di una rotazione completa in senso antiorario
+      stepper.runToPosition(); // Attendi che il motore raggiunga la posizione desiderata
+    }
+    if (receivedChar == '2') {
+      // Muovi il motore in senso antiorario
+      stepper.setSpeed(-500); // Imposta la velocità di rotazione in senso antiorario
+      stepper.move(stepsFor8Feet); // Ruota di una rotazione completa in senso antiorario
+      stepper.runToPosition(); // Attendi che il motore raggiunga la posizione desiderata
+    }
+    if (receivedChar == '3') {
+      // Muovi il motore in senso antiorario
+      stepper.setSpeed(-500); // Imposta la velocità di rotazione in senso antiorario
+      stepper.move(stepsFor8Feet); // Ruota di una rotazione completa in senso antiorario
+      stepper.runToPosition(); // Attendi che il motore raggiunga la posizione desiderata
+    }
+    if (receivedChar == '4') {
+      // Muovi il motore in senso antiorario
+      stepper.setSpeed(-500); // Imposta la velocità di rotazione in senso antiorario
+      stepper.move(stepsFor8Feet); // Ruota di una rotazione completa in senso antiorario
+      stepper.runToPosition(); // Attendi che il motore raggiunga la posizione desiderata
+    }
+    if (receivedChar == '5') {
+      // Muovi il motore in senso antiorario
+      stepper.setSpeed(-500); // Imposta la velocità di rotazione in senso antiorario
+      stepper.move(stepsFor8Feet); // Ruota di una rotazione completa in senso antiorario
+      stepper.runToPosition(); // Attendi che il motore raggiunga la posizione desiderata
+    }
+  }
+}

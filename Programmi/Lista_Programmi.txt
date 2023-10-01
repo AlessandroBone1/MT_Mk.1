@@ -1,0 +1,6 @@
+I programmi contenuti all'interno dello ZIP sono:
+-Python_code, creato in python per il riconoscimento facciale e il calcolo e l'invio della distanza all'arduino.
+
+-Arduino_code, creato in c++ per l'invio del segnale del sensore e la ricezione con opportuna rotozione (alto/basso) sella torretta.
+
+-haarcascade_frontalface_default.xml, che corrisponde al XML utilizzato dal programma in python per prendere i paramentri di rilevamento facciale.
